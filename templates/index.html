@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+<!-- {% block judul %}
+    {{judul}}
+{% endblock judul %}
+     -->
+
+{% block navigation %}
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src="{% static 'img/assasin.jpg' %}" class="rounded-circle" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav mr-auto">
+                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link active" href="#">Features</a>
+                <a class="nav-item nav-link ac" href="#">Pricing</a>
+                <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </div>
+        </div>
+            <a href=""><img src="{% static 'img/assasin.jpg' %}" style="margin-right: 10px;" class="rounded-circle"></a>
+            <a href="{% url 'login:index' %}" id="login" >login</a>
+    </nav>
+{% endblock navigation %}
+    

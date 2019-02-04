@@ -1,0 +1,26 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- Bootstrap CSS -->
+    {% include "bootstrap-css.html" %}
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    
+    {% block navigation %}
+      
+    {% endblock navigation %}
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- {% include "bootstrap-js.html" %} -->
+    
+    {% include 'bootstrap-js.html' %}
+  </body>
+</html>

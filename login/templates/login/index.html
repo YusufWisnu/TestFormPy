@@ -1,0 +1,18 @@
+{% extends 'login/base.html' %}
+
+
+{% block frm %}
+    <form action="" method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            {{FormLogin.Email.label_tag}}
+            {{FormLogin.Email}}
+        </div>
+        <div class="form-group">
+            {{FormLogin.Password.label_tag}}
+            {{FormLogin.Password}}
+        </div>
+        <button type="submit" class="btn btn-success">Login</button>
+    </form>
+{% endblock frm %}
+    
